@@ -1,60 +1,134 @@
 <!DOCTYPE html>
 <!--  
-Objective: This file serves as the main entry point for a personal profile webpage.  
-It structures the content, including the user's bio, projects, and social links,  
-using HTML.  
+Objective: This file serves as the main entry point for a landing page.  
+It structures the content, including navigation menu, hero section, features section and footer. This is created using 
+html and css
 -->
 <html>
     <head>
-        <title>
-            My Profile | Oladimeji Gabriel 
-        </title>
+        <title>Lasade Store</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
     </head>
     <body>
         <header>
-            <nav>
-                <ul>
-                    <li>About me</li>
-                    <li>Hobbies</li>
-                    <li>Contact</li>   
-                </ul>
-            </nav>
+            <div class="nav-wrapper">
+                <div> <img src="lasade.png"></div>
+                <div>
+                    <ul class="nav-menu">
+                       <a href="shop.html"> <li>Shop</li></a>
+                       <a href="new_arrivals"> <li>Category</li></a>
+                        <a href="categories"> <li>Services</li></a>
+                       <div class="download-btn"> <button>Download</button></div>
+                    </ul>
+                
+                </div>
+            </div>
         </header>
 
-        <h1>My Bio</h1>
-        <img src="tudoh.jpg">
-        <h3>Who is Oladimeji Gabriel</h3>
-        <p>Oladimeji Gabriel is a resident of Lagos, Nigeria. He is a passionate individual with a keen interest in technology and innovation. With a background in art, Oladimeji has developed a strong foundation in software development and web design. He enjoys exploring new technologies and applying his skills to solve real-world problems. In his free time, Oladimeji loves to read, travel, and engage in community service projects. His dedication to continuous learning and personal growth makes him a valuable asset in any team.</p>
-        <p>Oladimeji has worked on various projects ranging from small websites to large-scale applications. </p>
-        <p>Oladimeji is an excellent communicator and team player. He believes in the power of collaboration and often works closely with other developers, designers, and stakeholders to deliver high-quality products. His problem-solving abilities and attention to detail have earned him recognition.</p>
-        <p>Oladimeji is committed to giving back to his community. He volunteers at local tech meetups and mentors aspiring developers. He is also involved in various initiatives aimed at promoting STEM education among young people in Lagos. Through these efforts, Oladimeji hopes to inspire the next generation of tech enthusiasts and innovators.</p>
-        <p>Looking ahead, Oladimeji aims to further his education and stay updated with the latest advancements in technology. He is excited about the future and the endless possibilities that come with it. With his skills, experience, and passion, Oladimeji Gabriel is poised to make a significant impact in the tech industry.</p>
-        <h3>Hobbies</h3>
-        <p>Some of my hobbies includes;</p>
-        <ol>
-            <li>Reading</li>
-            <li>Traveling</li>
-            <li>Community service</li>
-            <li>Coding</li>
-            <li>Playing chess</li>
-        </ol>
-        <h3>Interests</h3>
-        <ol>
-            <li>Front-end development</li>
-            <li>Back-end development</li>
-            <li>JavaScript</li>
-            <li>React</li>
+        <section>
+            <div class="hero-wrapper">
+                <img src="hero_img2.png">
+                <div class="hero-contents">
+                 
+                    <h2><span style="color:#ef5223;">Beauty</span> on the go</h2>
+                    <p>Get the latest and medically verified beauty products
+                        shipped from best brands across the globe</p>
+                        <button>Start shopping</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="what-we-offer">
+                <h1>What we offer</h1>
+            </div>
             
-           
-        </ol>
+            <div class="services-wrapper">
+                <div class="services-content">
+                   
+                    <div class="features">
+                        <img src="personal.png">
+                        <h3>Beauty store</h3>
+                        <p>Get the latest cosmetics, hair accessories <br>and kits
+                            for your everyday fashion
+                        </p>
+                        <button class="features-btn">Store</button>
+                    </div>
 
-        <footer>
-            <hr>
-            <h2>Contact details</h2>
-            <p>Email Address: gabriel.oladimeji81@mail.com</p>
-            <p>Phone number: +234 9029160352</p>
-            <p>Linkdin: www.linkdin.com/oladimeji_gabriel</p>
-                    </footer>
+                    <div class="features">
+                        <img src="mortar.png">
+                        <h3>Special treats</h3>
+                        <p>Get the latest cosmetics, hair accessories <br>and kits
+                            for your everyday fashion
+                        </p>
+                        <button class="features-btn">Book</button>
+                    </div>
+                    <div class="features">
+                        <img src="hair-care.png">
+                        <h3>Services</h3>
+                        <p>Get the latest cosmetics, hair accessories <br>and kits
+                            for your everyday fashion
+                        </p>
+                        <button class="features-btn">View</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <h4>Brands</h4>
+                        <ul>
+                            <li>Omo</li>
+                            <li>Dove</li>
+                            <li>Pfizer</li>
+                            <li>Unilever</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li>Makeup</li>
+                            <li> Hair wash</li>
+                            <li>Soap</li>
+                            <li>Eyelids </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow us</h4>
+                       
+                        <div class="social-media">
+                            <a href=""><i class="fa-brands fa-facebook"></i> </a>
+                            <a href=""><i class="fa-brands fa-twitter"></i> </a>
+                            <a href=""><i class="fa-brands fa-instagram"></i> </a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Subscribe</h4>
+                        <form>
+                            <input type="email" placeholder="Enter email">
+                            <button type="submit">Submit</button>
+                        </form>
+                </div>
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                           <img src="lasade_web.png">
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                      <div class="copyright">
+                        <p>Copyright &copy; 2025 Lasade Store. All rights reserved
+                      </p>
+                    </div>
+                    </div>
+            </div>
+            </div>
+        </footer>
+       
     </body>
 </html>
